@@ -7,16 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Renzo Salvador" />
-    <h1>Renzo Salvador!</h1>
-    <p>Front End Developer + Designer</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <img src={`./images/logo-renzosalvador.png`} />
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="Renzo Salvador | Front End Developer" />
   </Layout>
 )
 
