@@ -7,39 +7,29 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Navigation from "./navigation"
+import WebHeader from "./webheader"
 import "./layout.css"
-import Logo from "./logo"
+import styled from "styled-components"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
-    <>
-      <Logo />
-      <Navigation />
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
+    <LayoutWrapper>
+      <WebHeader />
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.renzosalvador.com">Gatsby</a>
+          © {new Date().getFullYear()},
+          <a href="https://www.renzosalvador.com">Renzo Salvador</a>
         </footer>
       </div>
-    </>
+    </LayoutWrapper>
   )
 }
+
+const LayoutWrapper = styled.div`
+  max-width: 1200px;
+  margin: auto;
+`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
