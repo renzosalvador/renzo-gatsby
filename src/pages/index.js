@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
@@ -51,7 +52,9 @@ const IndexPage = () => (
             alt="Bootstrap"
           />
         </ListIcons>
-        <Button>Let's Talk</Button>
+        <Link to="/">
+          <Button>Let's Talk</Button>
+        </Link>
       </Content>
     </HeroWrapper>
   </Layout>
@@ -103,7 +106,13 @@ const ListIcons = styled.div`
 
 const Button = styled.button`
   display: block;
-  background-color: 
+  background-color: #a5cd39;
+  font-size: 20px;
+  padding: 12px 18px;
+  width: 200px;
+  border-radius: 12px;
+  border: 0;
+  margin-top: 25px;
   color: #ffffff;
 `
 

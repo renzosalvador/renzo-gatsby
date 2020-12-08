@@ -3,42 +3,73 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
+const src = "https://img.icons8.com/color/48/000000/"
+
 const Skills = () => (
   <Layout>
     <SEO title="Skills Renzo Salvador | Front End Developer" />
     <Title>Skills</Title>
     <SkillContainer>
       <Skill>
-        <span>HTML5</span>
+        <span>
+          <img src={src + "html-5.png"} />
+          HTML5
+        </span>
       </Skill>
       <Skill>
-        <span>CSS3</span>
-      </Skill>
-
-      <Skill>
-        <span>Javascript</span>
-      </Skill>
-
-      <Skill>
-        <span>jQuery</span>
+        <span>
+          <img src={src + "css3.png"} />
+          CSS3
+        </span>
       </Skill>
 
       <Skill>
-        <span>PHP</span>
-      </Skill>
-
-      <Skill>{/* <span>Wordpress</span> */}</Skill>
-
-      <Skill>
-        <span>Boostrap</span>
+        <span>
+          <img src={src + "javascript.png"} />
+          Javascript
+        </span>
       </Skill>
 
       <Skill>
-        <span>Shopify</span>
+        <span>
+          <img src={src + "npm.png"} />
+          NPM
+        </span>
       </Skill>
 
       <Skill>
-        <span>VueJS</span>
+        <span>
+          <img src={src + "php.png"} />
+          PHP
+        </span>
+      </Skill>
+
+      <Skill>
+        <span>
+          <img src={src + "wordpress.png"} />
+          Wordpress
+        </span>
+      </Skill>
+
+      <Skill>
+        <span>
+          <img src={src + "bootstrap.png"} />
+          Boostrap
+        </span>
+      </Skill>
+
+      <Skill>
+        <span>
+          <img src={src + "shopify.png"} />
+          Shopify
+        </span>
+      </Skill>
+
+      <Skill>
+        <span>
+          <img src={src + "vue-js.png"} />
+          VueJS
+        </span>
       </Skill>
     </SkillContainer>
   </Layout>
@@ -55,6 +86,12 @@ const SkillContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 40px;
+  transition: ease 0.5;
+  img {
+    max-width: 25px;
+    display: block;
+    margin: auto;
+  }
 `
 
 const Skill = styled.div`
@@ -66,7 +103,7 @@ const Skill = styled.div`
   border-radius: 50%;
   font-weight: 800;
   color: #a5cd39;
-  transition: ease 0.5;
+
   animation: fadeInFromTop ease 0.5;
   position: relative;
   span {

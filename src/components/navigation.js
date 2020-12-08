@@ -9,7 +9,7 @@ const Navigation = () => (
       <Link to="/about">About me</Link>
       <Link to="/skills">Skills</Link>
       <Link to="/">Projects</Link>
-      <Link to="/">Contact</Link>
+      <Link to="/contact">Contact</Link>
       <Link to="https://www.linkedin.com/in/renzosalvador/">
         <img width="30" src={require("../images/linkedin.png")} />
       </Link>
