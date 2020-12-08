@@ -137,8 +137,26 @@ body {
   line-height: 1.6;
 }
 
+h1 {
+  font-weight: 800;
+  font-size: 42px;
+}
+
 a {
   font-weight: 600;
   text-decoration: none;
   color: #222;
+}
+
+strong {
+  font-weight: 700;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.animation-container {
+  width: 400px;
+  height: 400px;
 }
