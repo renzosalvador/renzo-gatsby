@@ -15,19 +15,12 @@ import styled from "styled-components"
 const Layout = ({ children }) => (
   <LayoutWrapper>
     <WebHeader />
-    <MainContent>
-      <main>{children}</main>
-    </MainContent>
+    <main className="main-content">{children}</main>
     <Footer />
   </LayoutWrapper>
 )
 
 export default Layout
-
-const MainContent = styled.div`
-  max-width: 1200px;
-  margin: auto;
-`
 
 const LayoutWrapper = styled.div`
   display: grid;

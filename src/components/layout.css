@@ -140,6 +140,8 @@ body {
 h1 {
   font-weight: 800;
   font-size: 42px;
+  text-align: center;
+  margin: 25px 0;
 }
 
 a {
@@ -159,4 +161,9 @@ p {
 .animation-container {
   width: 400px;
   height: 400px;
+}
+
+.main-content {
+  max-width: 1300px;
+  margin: auto;
 }

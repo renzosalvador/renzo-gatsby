@@ -3,12 +3,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
-const IndexPage = () => (
+const About = () => (
   <Layout>
     <SEO title="About Renzo Salvador | Front End Developer" />
     <TextContent>
       <h1>About me</h1>
-      <img src={require("../images/renzo.jpg")} />
+      <img src={require("../images/renzo.jpg")} alt="renzo" />
       <p>
         I have been in the industry for more than 16 years. I started as a
         Graphic Designer and Web Developer (which I still am). In the last 10
@@ -64,4 +64,4 @@ const TwoCol = styled.div`
   grid-gap: 40px;
 `
 
-export default IndexPage
+export default About

@@ -15,6 +15,13 @@ const Webheader = () => (
 export default Webheader
 
 const HeaderWrapper = styled.div`
+  max-width: 1300px;
+  margin: auto;
   display: grid;
+  padding-top: 15px;
   grid-template-columns: repeat(3, auto);
+  grid-gap: 25px;
+  @media (max-width: 760px) {
+    grid-template-columns: repeat(1, auto);
+  }
 `

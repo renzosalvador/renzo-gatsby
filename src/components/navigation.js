@@ -5,10 +5,9 @@ import styled from "styled-components"
 const Navigation = () => (
   <>
     <NavigationGroup>
-      <Link to="/">Start</Link>
       <Link to="/about">About me</Link>
       <Link to="/skills">Skills</Link>
-      <Link to="/">Projects</Link>
+      <Link to="/portfolio">Portfolio</Link>
       <Link to="/contact">Contact</Link>
       <Link to="https://www.linkedin.com/in/renzosalvador/">
         <img width="30" src={require("../images/linkedin.png")} />
@@ -22,8 +21,12 @@ export default Navigation
 const NavigationGroup = styled.div`
   padding: 15px 0;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(5, auto);
   transition: 0.5s all;
+  grid-gap: 15px;
+  @media (max-width: 760px) {
+    grid-template-columns: repeat(3, auto);
+  }
   a {
     align-self: right;
     background-color: #fff;
@@ -33,6 +36,7 @@ const NavigationGroup = styled.div`
     transition: 0.2s all;
     text-transform: uppercase;
     font-weight: 800;
+    font-size: 17px;
     transition: all 0.2s;
     &:hover {
       color: #a5cd39;
